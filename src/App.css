@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+/* Smooth transitions */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Button animations */
+.button-gradient {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-gradient:hover {
+  background: linear-gradient(to right, #feb47b, #ff7e5f);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar glow effect */
+.sidebar-item:hover {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  transition: all 0.3s ease;
+}
